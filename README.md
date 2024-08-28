@@ -67,5 +67,6 @@ validates the configuration files in a directory, referring only to the configur
 
 **Step 3** `terraform apply "main.tfplan"`
 
-used to apply the changes required to reach the desired state of the configuration
-***Note:*** Keep in mind that the public IPs and NSGs sometimes give errors, if that happens, just create and associate those directly from the UI and import those into the terraform plan by command: `terraform import {resource_type [example: azurerm_resource_group]}.{resource_name[example: azure-stack-rs]} /subscriptions/{subscription-id}/resourceGroups/{resource_groupname}`
+used to apply the changes required to reach the desired state of the configuration.
+
+**Note:** Keep in mind that the public IPs and NSGs sometimes give errors, if that happens, just create and associate those directly from the UI and import those into the terraform plan by command: `terraform import {resource_type [example: azurerm_resource_group]}.{resource_name[example: azure-stack-rs]} /subscriptions/{subscription-id}/resourceGroups/{resource_groupname}`
